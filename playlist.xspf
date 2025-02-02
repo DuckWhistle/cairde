@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist version="1" xmlns="http://xspf.org/ns/0/">
+  <title>Cairde</title>
+  <trackList>
+    <track>
+      <location>GMR-March2000.mp3</location>
+      <image>logo.png</image>
+      <title>BBC GMR live performance, 4 March 2000</title>
+      <creator>Cairde</creator>
+    </track>
+  </trackList>
+</playlist>

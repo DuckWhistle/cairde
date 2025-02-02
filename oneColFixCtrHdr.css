@@ -1,0 +1,155 @@
+@charset "utf-8";
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background-color: #666666;
+	background-image:url(body.jpg);
+	background-position: top center;
+	background-repeat: repeat;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	/*color: #8A2D00;*/
+	color: #333;
+	
+}
+.oneColFixCtrHdr #container {
+	width: 780px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	/*background: #FFFFFF;*/
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border-left: 10px solid #333333;
+	border-right: 10px solid #333333;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	background-color:#CCC;
+	background-image:url(head.jpg);
+	background-position:center top;
+	background-repeat: no-repeat;
+}
+.oneColFixCtrHdr #header {
+	/*background: #DDDDDD; */
+	padding: 0 10px 150px 20px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+}
+.oneColFixCtrHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0 10px 400px; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+	color: #fff;
+	text-align: right;
+	font-size: small;
+}
+#site-logo {
+	display: none;
+}
+.oneColFixCtrHdr #mainContent {
+	padding: 0 20px 0 90px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	/*background: #FFFFFF;*/
+}
+.oneColFixCtrHdr #mainContent p {
+	padding-left: 20px;
+}
+.oneColFixCtrHdr #footer {
+	padding: 0 10px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	/*background:#DDDDDD;*/
+	background-color:#CCC;
+	background-image:url(foot.jpg);
+	background-position:center bottom;
+	background-repeat: no-repeat;
+	height: 150px;
+	
+}
+.oneColFixCtrHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+	padding-top: 125px;
+	color: #fff;
+}
+p#intro-credit {
+	color: #fff;
+	text-align: right;
+	padding-bottom: 10px;
+}
+h2 {
+	color: #930;
+	/*background-color: #CCC;*/
+}
+h2#h2-what, h2#h2-who, h2#h2-play, h2#h2-now, h2#h2-media, h2#h2-links {
+	background-image:url(background-h2-what.gif);
+	background-position:left top;
+	background-repeat: no-repeat;
+	height: 50px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+h2#h2-who {
+	background-image:url(background-h2-who.gif);
+}
+h2#h2-play {
+	background-image:url(background-h2-play.gif);
+}
+h2#h2-now {
+	background-image:url(background-h2-now.gif);
+}
+h2#h2-media {
+	background-image:url(background-h2-media.gif);
+}
+h2#h2-links {
+	background-image:url(background-h2-links.gif);
+}
+h2 span {
+	position: absolute;
+	left: -9000px;
+}
+#feature-who p {
+	font-size: smaller;
+}
+.feature-img {
+	float: left;
+}
+.band-photo {
+	padding: 0 5px 30px 0;
+}
+p.feature-nav {
+	text-align: center;
+}
+
+#feature-who-rachel, #feature-who-rory, #feature-who-rob, #feature-who-phil {
+	/*max-width: 200px;*/
+}
+
+#feature-who-rory, #feature-who-rob, #feature-who-phil {
+	display: none;
+}
+
+#img-first-poster {
+	float: right;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+#img-rachel-myspace {
+	float: left;
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+
+
+a:link {
+	color: #930;
+	text-decoration: none;
+}
+a:visited {
+	/*color: #960;*/
+	color: #930;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #900;
+	text-decoration: underline;
+}
+
+#footer  a:link, #footer  a:visited, #footer a:hover, #footer  a:active {
+	color: #fff;
+	font-weight: bold;
+}
+
+#footer a img {
+	border: none;
+}
